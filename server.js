@@ -13,6 +13,12 @@ app.get('/artical one' ,  function (req, res) {
   res.send('Artical one will be sreved here');  
 });
 app.get('/ui/style.css', function (req, res) {
+   app.get('/artical two' ,  function (req, res) { 
+    res.send('Artical two will be sreved here');
+   });
+  app.get('/artical three' ,  function (req, res) {
+  res.send('Artical three will be sreved here');  
+}); 
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
